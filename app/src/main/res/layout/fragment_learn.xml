@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    tools:context=".fragment.FragmentLearn">
+
+    <TextView
+        android:id="@+id/tvTT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:text="Học từ mới ngay thôi nào!"
+        android:textSize="35dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/tvAV"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_hoc"
+        android:gravity="center"
+        android:text="Anh-Việt"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTT" />
+
+    <TextView
+        android:id="@+id/tvVA"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_hoc"
+        android:gravity="center"
+        android:text="Việt-Anh"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAV" />
+
+
+
+    <!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tab"-->
+<!--        app:tabTextColor="@color/black"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:tabSelectedTextColor="#1067AC"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/viewPager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="630dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tab"-->
+<!--        app:layout_constraintVertical_bias="0.037"-->
+<!--        tools:layout_editor_absoluteX="0dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

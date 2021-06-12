@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".fragment.FragmentInfo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thay đổi thông tin cá nhân" />
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_marginTop="50dp"
+        android:hint="ID"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_marginTop="50dp"
+        android:hint="User Name"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvPass"
+        android:layout_marginTop="50dp"
+        android:hint="Password"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/eHoTen"
+        android:layout_marginTop="50dp"
+        android:hint="Họ tên"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/eDate"
+            android:hint="Ngày sinh"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_edit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btDate"
+            android:text="Date"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/eGioiTinh"
+        android:hint="Giới tính"
+        android:textSize="25dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/bg_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btUpdate"
+        android:hint="Cập nhật"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btHuy"
+        android:hint="Huỷ"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

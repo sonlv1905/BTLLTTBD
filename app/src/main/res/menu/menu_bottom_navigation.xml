@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/iHome"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        />
+    <item
+        android:id="@+id/iLearn1"
+        android:title="Learn"
+        android:icon="@drawable/ic_book"
+        />
+    <item
+        android:id="@+id/iLearn2"
+        android:title="Review"
+        android:icon="@drawable/ic_library"
+        />
+    <item
+        android:id="@+id/iInfo"
+        android:title="Information"
+        android:icon="@drawable/ic_clear"
+        />
+</menu>

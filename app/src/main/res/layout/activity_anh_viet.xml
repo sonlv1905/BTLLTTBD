@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AnhVietActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        <TextView-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:id="@+id/tvTime"-->
+<!--            android:hint="time"-->
+<!--            android:textSize="20dp"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+        <TextView
+            android:id="@+id/tvTong"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_gravity="right"
+            android:hint="so cau dung"
+            android:textSize="20dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvCH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:hint="cau hoi la"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/eTL"
+        android:hint="Nhập đáp án"
+        android:textSize="25dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btTT"
+            android:layout_width="150dp"
+            android:text="Kiểm tra"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

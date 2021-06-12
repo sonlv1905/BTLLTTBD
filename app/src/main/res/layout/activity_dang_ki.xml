@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKiActivity">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/tvTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG KÝ"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/eHoTen"
+        android:hint="Họ tên"
+        android:layout_margin="20dp"
+        android:textSize="25dp"
+        android:background="@drawable/bg_edit"
+        app:layout_constraintTop_toBottomOf="@+id/tvTT"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <EditText
+        android:id="@+id/eUserName"
+        android:hint="User Name"
+        android:layout_margin="20dp"
+        android:textSize="25dp"
+        android:background="@drawable/bg_edit"
+        app:layout_constraintTop_toBottomOf="@+id/eHoTen"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/ePassword"
+        android:hint="Password"
+        android:layout_margin="20dp"
+        android:textSize="25dp"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_edit"
+        app:layout_constraintTop_toBottomOf="@+id/eUserName"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <EditText
+        android:id="@+id/eConfirmPassword"
+        android:hint="Confirm Password"
+        android:layout_margin="20dp"
+        android:textSize="25dp"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_edit"
+        app:layout_constraintTop_toBottomOf="@+id/ePassword"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/eNgaySinh"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit"
+        android:hint="Ngày Sinh"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/btDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eConfirmPassword" />
+
+    <Button
+        android:id="@+id/btDate"
+        android:layout_width="100dp"
+        android:text="Date"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eConfirmPassword" />
+
+    <EditText
+        android:id="@+id/eGioiTinh"
+        android:hint="Giới tính"
+        android:layout_margin="20dp"
+        android:textSize="25dp"
+        android:background="@drawable/bg_edit"
+        app:layout_constraintTop_toBottomOf="@+id/eNgaySinh"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btDK"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Đăng ký"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eGioiTinh" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
